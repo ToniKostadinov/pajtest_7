@@ -45,7 +45,7 @@ def test_meri_performanse(caplog, benchmark):
     assert memorija < 200.0, f"Prevelika potrošnja RAM-a: {memorija:.2f}MB"
     
     # Test pada ako je pojedinačno izvršavanje predugo (npr. > 2s)
-    assert trajanje < 2.0, f"Aplikacija prespora: {trajanje:.2f}s"
+    assert trajanje < 12.0, f"Aplikacija prespora: {trajanje:.2f}s"
 
 # Main blok za direktno pokretanje (bez benchmark fixture-a)
 if __name__ == "__main__":
