@@ -1,3 +1,5 @@
+![Python Tests](https://github.com/ToniKostadinov/pajtest_7)
+
 # Python Automation Framework (Testiranje Performansi)
 
 Ovaj projekat služi za automatizovano testiranje logike i performansi Python aplikacija.

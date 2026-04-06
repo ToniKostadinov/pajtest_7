@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Generišemo datum i vreme jednom da bi se poklapali u imenima fajlova
+TIMESTAMP=$(date +%Y-%m-%d_%H-%M)
+HTML_REPORT="izvestaj_${TIMESTAMP}.html"
+HISTOGRAM="histogram_${TIMESTAMP}"
+
+echo "🚀 Pokrećem testove performansi..."
+
+# Izvršavamo tvoju dugačku komandu
+pytest test_monitor.py \
+    --html=$HTML_REPORT \
+    --self-contained-html \
+    --benchmark-histogram=$HISTOGRAM \
+    -s
+
+echo "✅ Testovi završeni!"
+echo "📊 Izveštaj: $HTML_REPORT"
+echo "📈 Grafikon: ${HISTOGRAM}.svg"
