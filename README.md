@@ -1,4 +1,5 @@
 ![Python Tests](https://github.com/ToniKostadinov/pajtest_7)
+![Coverage](https://shields.io)
 
 # Python Automation Framework (Testiranje Performansi)
 
