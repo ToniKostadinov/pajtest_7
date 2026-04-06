@@ -1,0 +1,13 @@
+# Virtuelno okruženje
+venv/
+__pycache__/
+*.pyc
+
+# Izveštaji i grafikoni (ne želimo ih u istoriji koda)
+izvestaj_*.html
+histogram_*.svg
+.pytest_cache/
+.benchmarks/
+
+# Ostalo
+.vscode/
